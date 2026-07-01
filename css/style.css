@@ -1,0 +1,679 @@
+/* ============================================
+   器灵 V7.0 — 全新视觉风格
+   覆盖南职网所有遗留样式
+   传承重器 · 通用认知操作系统
+   ============================================ */
+
+/* ---- 基础重置 ---- */
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+    background: #f5f5f5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #222;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+a { 
+    color: #8B0000; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover { 
+    color: #DC143C; 
+    text-decoration: none; 
+}
+
+.clear { clear: both; }
+
+/* ---- 导航栏 ---- */
+.navbar-default {
+    background: #1a1a2e;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar-default .navbar-brand {
+    color: #FFD700 !important;
+    font-size: 22px;
+    font-weight: bold;
+    height: auto;
+    padding: 15px;
+}
+
+.navbar-default .navbar-brand span {
+    color: #DC143C;
+}
+
+.navbar-default .navbar-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ccc !important;
+    font-size: 14px;
+    padding: 15px 18px;
+    transition: color 0.3s;
+    font-weight: normal;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li.active > a:hover {
+    color: #FFD700 !important;
+    background: transparent !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #444;
+    margin-top: 10px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #FFD700;
+}
+
+.navbar-default .navbar-collapse {
+    border: none;
+    box-shadow: none;
+}
+
+/* ---- 下拉菜单 ---- */
+.dropdown-menu {
+    background: #1a1a2e;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.dropdown-menu > li > a {
+    color: #ccc;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.dropdown-menu > li > a:hover {
+    background: #2a2a4e;
+    color: #FFD700;
+}
+
+.dropdown .caret {
+    border-top-color: #ccc;
+}
+
+/* ---- 布局容器 ---- */
+#wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+/* ---- Hero 首屏 ---- */
+.hero-text {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    color: #FFD700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.version-badge {
+    display: inline-block;
+    background: #8B0000;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 15px;
+    font-weight: normal;
+}
+
+/* ---- 通用板块 ---- */
+.qiling-section {
+    padding: 50px 0;
+}
+
+.qiling-section:nth-child(odd) {
+    background: #fff;
+}
+
+.qiling-section:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.section-padding {
+    padding: 50px 0;
+}
+
+.section-title {
+    border-bottom: 3px solid #8B0000;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+    color: #222;
+}
+
+.gray-bg {
+    background: #f9f9f9;
+    padding: 50px 0;
+}
+
+/* ---- 四柱卡片 ---- */
+.pillar-box {
+    background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 220px;
+    box-shadow: 0 4px 15px rgba(139,0,0,0.2);
+}
+
+.pillar-box h3 {
+    margin-top: 0;
+    color: #FFD700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.pillar-box p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.95);
+    margin-bottom: 0;
+}
+
+.pillar-box .number {
+    font-size: 48px;
+    opacity: 0.3;
+    float: right;
+    margin-top: -10px;
+    color: white;
+}
+
+/* ---- 三锚 ---- */
+.anchor-box {
+    background: #2c3e50;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.anchor-box h4 {
+    color: #3498db;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.anchor-box p {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ---- 约束框 ---- */
+.constraint-red {
+    background: #fff0f0;
+    border-left: 5px solid #c00;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+.constraint-red h5 {
+    color: #c00;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.constraint-red p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.constraint-yellow {
+    background: #fffdf0;
+    border-left: 5px solid #ca0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+.constraint-yellow h5 {
+    color: #a80;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.constraint-yellow p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* ---- 模块卡片 ---- */
+.module-list {
+    background: white;
+    border-left: 4px solid #8B0000;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    border-radius: 0 6px 6px 0;
+}
+
+.module-list h5 {
+    margin-top: 0;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.module-list p {
+    margin-bottom: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* ---- 插件卡片 ---- */
+.plug-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-top: 4px solid #8B0000;
+}
+
+.plug-card h4 {
+    color: #8B0000;
+    margin-top: 0;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.tag {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #666;
+    padding: 3px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+}
+
+.plug-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* ---- 步骤流程 ---- */
+.step-flow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 25px 0;
+}
+
+.step-item {
+    background: #8B0000;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.step-arrow {
+    color: #8B0000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ---- 协议代码框 ---- */
+.protocol-box {
+    background: #1a1a2e;
+    color: #00ff88;
+    padding: 25px;
+    border-radius: 10px;
+    font-family: "Courier New", "Consolas", monospace;
+    font-size: 13px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-height: 450px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+}
+
+/* ---- 按钮 ---- */
+.btn-copy {
+    background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.btn-copy:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139,0,0,0.3);
+    color: white;
+}
+
+/* ---- 页脚 ---- */
+.footer-qiling {
+    background: #1a1a2e;
+    color: #777;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 13px;
+}
+
+/* ---- 步骤卡片（事后印证页） ---- */
+.step-card {
+    background: white;
+    border-left: 5px solid #8B0000;
+    padding: 25px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.step-card .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #8B0000;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.step-card h4 {
+    display: inline;
+    color: #333;
+    font-weight: bold;
+}
+
+.step-card p {
+    margin: 10px 0 0 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ---- 公式/代码框 ---- */
+.formula-box {
+    background: #1a1a2e;
+    color: #00ff88;
+    padding: 25px;
+    border-radius: 10px;
+    font-family: "Courier New", monospace;
+    margin: 20px 0;
+    line-height: 1.8;
+    border: 1px solid #333;
+}
+
+/* ---- 警示框 ---- */
+.warning-box {
+    background: #fff0f0;
+    border: 2px solid #c00;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.warning-box h4 {
+    color: #c00;
+    margin-top: 0;
+}
+
+.success-box {
+    background: #f0fff0;
+    border: 2px solid #4a6741;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.success-box h4 {
+    color: #4a6741;
+    margin-top: 0;
+}
+
+/* ---- 公理框 ---- */
+.axiom-box {
+    background: #f9f9f9;
+    border-left: 4px solid #8B0000;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.causal-line {
+    background: #1a1a2e;
+    color: #00ff88;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-family: "Courier New", monospace;
+    line-height: 1.8;
+    border: 1px solid #333;
+}
+
+/* ---- 通用组件 ---- */
+.aligncenter {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+/* ---- Flexslider 覆盖（幻灯片） ---- */
+.flexslider {
+    border: none;
+    margin: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.flex-caption {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.flex-caption h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+/* ---- 返回顶部 ---- */
+.scrollup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #8B0000;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    display: none;
+    z-index: 999;
+}
+
+.scrollup:hover {
+    background: #DC143C;
+    color: white;
+}
+
+/* ---- 轮播 ---- */
+.carousel {
+    position: relative;
+}
+
+#quote-carousel {
+    padding: 0;
+}
+
+/* ---- Skill Home ---- */
+.skill-home {
+    margin: 30px 0;
+}
+
+.skill-home-solid {
+    clear: both;
+}
+
+.box-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.box-content h3 {
+    color: #8B0000;
+    font-size: 18px;
+}
+
+.box-content p {
+    color: #666;
+    font-size: 14px;
+}
+
+.box-content.focus {
+    border: 2px solid #8B0000;
+}
+
+.icons {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 36px;
+    color: #8B0000;
+}
+
+/* ---- 响应式（手机适配） ---- */
+@media (max-width: 768px) {
+    .hero-text h1 { 
+        font-size: 36px; 
+    }
+    .hero-text { 
+        padding: 50px 15px; 
+    }
+    .hero-text p {
+        font-size: 15px;
+    }
+    .pillar-box { 
+        margin-bottom: 15px; 
+        min-height: auto; 
+    }
+    .pillar-box .number {
+        font-size: 36px;
+    }
+    .step-flow { 
+        flex-direction: column; 
+        gap: 5px;
+    }
+    .step-arrow { 
+        transform: rotate(90deg); 
+    }
+    .navbar-default .navbar-nav > li > a { 
+        padding: 10px 15px; 
+    }
+    .protocol-box { 
+        font-size: 12px; 
+        padding: 15px; 
+    }
+    .qiling-section {
+        padding: 30px 0;
+    }
+    .section-padding {
+        padding: 30px 0;
+    }
+    .gray-bg {
+        padding: 30px 0;
+    }
+    .navbar-default .navbar-collapse {
+        background: #1a1a2e;
+    }
+    .plug-card {
+        padding: 20px;
+    }
+    .btn-copy {
+        width: 100%;
+        padding: 14px;
+    }
+    .footer-qiling {
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    .pillar-box {
+        padding: 20px;
+    }
+    .step-card {
+        padding: 18px;
+    }
+    .module-list {
+        padding: 14px 16px;
+    }
+}
